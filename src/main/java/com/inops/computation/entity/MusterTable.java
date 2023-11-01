@@ -1,4 +1,4 @@
-package com.inops.computation;
+package com.inops.computation.entity;
 
 import java.time.LocalDate;
 

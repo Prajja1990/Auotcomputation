@@ -1,4 +1,4 @@
-package com.inops.computation;
+package com.inops.computation.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,17 +19,17 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Tblcadres")
-public class Cadre {
+@Table(name = "tbldepartments")
+public class Department {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name = "cadreid")
+	@Column(name = "deptid")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String cadreId;
+	private String id;
 
-	@Column(name = "cadre")
-	private String cadre;
+	@Column(name = "department")
+	private String departmentName;
 
 }

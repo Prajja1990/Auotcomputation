@@ -1,4 +1,4 @@
-package com.inops.computation;
+package com.inops.computation.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

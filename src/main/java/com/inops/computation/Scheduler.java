@@ -7,7 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-@Component
+import com.inops.computation.service.impl.ComputeService;
+
+//@Component
 public class Scheduler {
 
 	ComputeService computeService;

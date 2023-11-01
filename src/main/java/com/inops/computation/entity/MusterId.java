@@ -1,4 +1,4 @@
-package com.inops.computation;
+package com.inops.computation.entity;
 
 import java.io.Serializable;
 import java.util.Date;

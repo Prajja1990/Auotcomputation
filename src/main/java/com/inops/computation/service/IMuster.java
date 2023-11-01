@@ -1,8 +1,10 @@
-package com.inops.computation;
+package com.inops.computation.service;
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+
+import com.inops.computation.entity.MusterTable;
 
 
 public interface IMuster {

@@ -1,13 +1,10 @@
-package com.inops.computation;
+package com.inops.computation.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -22,26 +19,17 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "tblempmast")
-public class Employee {
+@Table(name = "Tblcadres")
+public class Cadre {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "cadreid")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "empid")
-	private String employeeId;
-	
-	@Column(name = "empname")
-	private String employeeName;
-	
-	@ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "deptid")
-    private Department department;
-	
-	@ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "cadreid")
-    private Cadre cadre;
-	
-	
+	private String cadreId;
+
+	@Column(name = "cadre")
+	private String cadre;
+
 }

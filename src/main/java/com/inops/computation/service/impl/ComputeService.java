@@ -1,8 +1,10 @@
-package com.inops.computation;
+package com.inops.computation.service.impl;
 
 import java.time.LocalDate;
 
 import org.springframework.stereotype.Service;
+
+import com.inops.computation.repository.ComputeRepository;
 
 @Service
 public class ComputeService {

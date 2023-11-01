@@ -1,10 +1,13 @@
-package com.inops.computation;
+package com.inops.computation.repository;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.inops.computation.entity.MusterId;
+import com.inops.computation.entity.MusterTable;
 
 public interface MusterRepository extends JpaRepository<MusterTable, MusterId> {
 
